@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lēoma | Premium Blinds</title>
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800&display=swap"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Link tới file CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- --- HEADER --- -->
     <header id="main-header">
-      <a href="#home" class="logo">LĒOMA</a>
+      <a href="#home" class="logo">
+        <img src="img/logo_text.png" alt="Lēoma Logo" />
+      </a>
       <nav>
         <a href="#home">Trang chủ</a>
         <a href="#about">Về chúng tôi</a>
@@ -25,53 +29,158 @@
       <a href="#footer" class="contact-btn">Liên hệ ngay</a>
     </header>
 
-    <!-- --- HERO SECTION --- -->
-    <section id="home" class="hero-new">
-      <div
-        class="main-image-placeholder"
-        style="background-image: url('img/hero_1.png')"
-      ></div>
+    <section id="home" class="hero-brand">
+      <div class="hero-bg-text">
+        <div class="bg-text-block left">
+          <span class="line1">KHÔNG</span>
+          <span class="line2">GIAN</span>
+        </div>
+        <div class="bg-text-block right">
+          <span class="line1">TINH</span>
+          <span class="line2">QUANG</span>
+        </div>
+      </div>
 
-      <div class="hero-content-wrapper">
-        <div class="hero-left-col">
-          <div class="bg-text-block">
-            <span>KHÔNG</span>
-            <span>GIAN</span>
+      <div class="blinds-grid-center">
+        <div
+          class="blind-square"
+          onclick="document.getElementById('man-go').scrollIntoView({behavior: 'smooth'})"
+          style="background-image: url('img/man_go_bg.png')"
+        >
+          <span>MÀN GỖ</span>
+        </div>
+        <div
+          class="blind-square zoom-bg"
+          onclick="document.getElementById('man-nhom').scrollIntoView({behavior: 'smooth'})"
+          style="background-image: url('img/man_nhom_lg.png')"
+        >
+          <span>MÀN NHÔM</span>
+        </div>
+        <div
+          class="blind-square"
+          onclick="document.getElementById('man-cau-vong').scrollIntoView({behavior: 'smooth'})"
+          style="background-image: url('img/cv_bg.png')"
+        >
+          <span>MÀN CẦU VỒNG</span>
+        </div>
+        <div
+          class="blind-square zoom-bg"
+          onclick="document.getElementById('man-cuon').scrollIntoView({behavior: 'smooth'})"
+          style="background-image: url('img/man_cuon_lg.png')"
+        >
+          <span>MÀN CUỐN</span>
+        </div>
+      </div>
+
+      <a href="#products" class="float-badge badge-brand">
+        Khám phá bộ sưu tập
+        <div class="circle">↗</div>
+      </a>
+    </section>
+
+    <section id="about" class="about-section">
+      <div class="about-intro">
+        <h2>
+          Kiến tạo không gian hoàn mỹ từ <span>ánh sáng</span> đến
+          <span>nền tảng</span>.
+        </h2>
+        <p>
+          Lēoma tự hào là chuyên gia cung cấp giải pháp không gian toàn diện.
+          Chúng tôi không chỉ mang đến những bộ
+          <strong>Màn Sáo Cao Cấp</strong> giúp điều tiết ánh sáng tinh tế, mà
+          còn cung cấp hệ thống <strong>Lót Sàn Công Nghệ</strong> hiện đại, bền
+          bỉ. Dù là chi tiết nhỏ nhất, chúng tôi luôn giữ vững niềm tin của
+          khách hàng qua quá trình kiểm định khắt khe.
+        </p>
+      </div>
+
+      <div class="about-bento">
+        <div
+          class="bento-card product-card"
+          style="background-image: url('img/man_go_lg.png')"
+        >
+          <div class="card-content">
+            <h3>Màn Sáo</h3>
+            <p>Giải pháp che chắn & thẩm mỹ</p>
           </div>
-          <a href="#products" class="float-badge badge-left">
-            Khám phá bộ sưu tập
-            <div class="circle">↗</div>
-          </a>
         </div>
 
-        <div class="hero-right-col">
-          <div class="bg-text-block bg-text-right">
-            <span>TINH</span>
-            <span>QUANG</span>
+        <div class="bento-card values-card">
+          <h3>Triết lý Lēoma</h3>
+          <div class="values-grid">
+            <div class="value-item">
+              <i class="fa-solid fa-award v-icon"></i> Chất Lượng
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-swatchbook v-icon"></i> Thẩm Mỹ
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-layer-group v-icon"></i> Đa Dạng
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-hand-holding-heart v-icon"></i> Tận Tâm
+            </div>
+
+            <div class="value-item">
+              <i class="fa-solid fa-sliders v-icon"></i> Linh Hoạt
+            </div>
+
+            <div class="value-item">
+              <i class="fa-regular fa-gem v-icon"></i> Tinh Tế
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bento-card product-card"
+          style="background-image: url('img/lot_san.png')"
+        >
+          <div class="card-content">
+            <h3>Lót Sàn Công Nghệ</h3>
+            <p>Vững chãi & Êm ái từng bước chân</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- --- ABOUT SECTION --- -->
-    <section id="about" class="partners-section">
-      <div class="philosophy-grid">
-        <h2>
-          Chú trọng chất lượng, chúng tôi giữ vững niềm tin của khách hàng.
-        </h2>
-        <p>
-          Chúng tôi đảm bảo mỗi công trình đều trải qua quá trình kiểm định chất
-          lượng khắt khe. Mang đến giải pháp bền vững cho một không gian sống
-          xanh và thân thiện với môi trường.
+    <section id="partners" class="partners-section">
+      
+      <div class="partners-header">
+        <h2 class="section-title text-center">Đối tác chiến lược</h2>
+        <p class="partners-desc">
+          Tự hào đồng hành cùng các đơn vị thiết kế kiến trúc và nhà thầu uy tín, kiến tạo nên những không gian sống và làm việc đẳng cấp.
         </p>
       </div>
-      <div class="partners-container">
-        <div class="partner-circle">SOMFY</div>
-        <div class="partner-circle">LUTRON</div>
-        <div class="partner-circle">H.DOUGLAS</div>
-        <div class="partner-circle">ROLLEASE</div>
-        <div class="partner-circle">COULISSE</div>
-        <div class="partner-circle">PHIFER</div>
+
+      <div class="partners-grid">
+        
+        <div class="partner-box">
+          <img src="img/partner_1.png" alt="Logo Đối tác 1">
+        </div>
+        
+        <div class="partner-box">
+          <img src="img/partner_2.png" alt="Logo Đối tác 2">
+        </div>
+        
+        <div class="partner-box">
+          <img src="img/partner_3.png" alt="Logo Đối tác 3">
+        </div>
+        
+        <div class="partner-box">
+          <img src="img/partner_4.png" alt="Logo Đối tác 4">
+        </div>
+        
+        <div class="partner-box">
+          <img src="img/partner_5.png" alt="Logo Đối tác 5">
+        </div>
+        
+        <div class="partner-box">
+          <img src="img/partner_6.png" alt="Logo Đối tác 6">
+        </div>
+
       </div>
     </section>
 
@@ -80,36 +189,55 @@
       <h2 class="section-title">Dịch vụ chuyên nghiệp</h2>
       <div class="services-grid">
         <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-house-user"></i></div>
           <h3>Tư vấn tận nơi</h3>
           <p>
             Đội ngũ chuyên gia đo đạc và tư vấn mẫu tại nhà hoàn toàn miễn phí.
           </p>
         </div>
+
         <div class="service-item">
+          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
           <h3>Thiết kế Bespoke</h3>
           <p>
             Sản xuất riêng biệt theo kích thước và yêu cầu cá nhân của từng ô
             cửa.
           </p>
         </div>
+
         <div class="service-item">
+          <div class="service-icon">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+          </div>
           <h3>Lắp đặt chuẩn xác</h3>
           <p>
             Quy trình lắp đặt sạch sẽ, nhanh chóng bởi kỹ thuật viên tay nghề
             cao.
           </p>
         </div>
+
         <div class="service-item">
+          <div class="service-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
           <h3>Bảo hành 24/7</h3>
           <p>Cam kết xử lý mọi vấn đề kỹ thuật trong vòng 24 giờ làm việc.</p>
         </div>
+
         <div class="service-item">
+          <div class="service-icon">
+            <i class="fa-solid fa-house-signal"></i>
+          </div>
           <h3>SmartHome</h3>
           <p>
             Điều khiển rèm qua ứng dụng điện thoại và ra lệnh bằng giọng nói.
           </p>
         </div>
+
         <div class="service-item">
+          <div class="service-icon">
+            <i class="fa-solid fa-spray-can-sparkles"></i>
+          </div>
           <h3>Vệ sinh & Bảo dưỡng</h3>
           <p>Dịch vụ chăm sóc định kỳ giúp rèm cửa luôn bền đẹp như mới.</p>
         </div>
@@ -121,108 +249,233 @@
       <h2 class="section-title">Sản phẩm tiêu biểu</h2>
       <div class="picks-container">
         <!-- SẢN PHẨM 1: MÀN GỖ (Bố cục Editorial) -->
-        <div class="premium-wood-section">
-          <div class="premium-image-col">
-            <div
-              class="premium-img-main"
-              style="background-image: url('img/Man\ go.jpg')"
-            ></div>
-            <div class="premium-tag">Best Seller</div>
-          </div>
-          <div class="premium-info-col">
-            <div class="info-content">
-              <h3 class="premium-title">Màn Gỗ Tự Nhiên</h3>
-              <p class="premium-desc">
-                Sự kết hợp hoàn hảo giữa vẻ đẹp mộc mạc và công năng vượt trội.
-                Chế tác từ gỗ cao cấp, mang lại không gian ấm cúng và sang trọng
-                cho mọi căn phòng.
-              </p>
-              <div class="premium-features">
-                <div class="feature-item">
-                  <span class="f-icon">🌿</span
-                  ><span class="f-text">100% Gỗ tự nhiên</span>
-                </div>
-                <div class="feature-item">
-                  <span class="f-icon">🛡️</span
-                  ><span class="f-text">Sơn UV chống xước</span>
-                </div>
-                <div class="feature-item">
-                  <span class="f-icon">☀️</span
-                  ><span class="f-text">Cản sáng 95%</span>
-                </div>
-                <div class="feature-item">
-                  <span class="f-icon">🔄</span
-                  ><span class="f-text">Xoay lật 180° linh hoạt</span>
-                </div>
+        <div id="man-go" class="roller-poster-section wood-poster-section">
+          <div class="wood-hero"></div>
+
+          <div class="roller-middle">
+            <h3 class="roller-title">MÀN SÁO GỖ</h3>
+
+            <div class="roller-features">
+              <div class="r-feature">
+                <i class="fa-solid fa-tree r-icon"></i>
+                <span>GỖ TỰ NHIÊN<br />SANG TRỌNG</span>
               </div>
-              <a href="#" class="premium-btn">Xem chi tiết <span>→</span></a>
+              <div class="r-feature">
+                <i class="fa-solid fa-water r-icon"></i>
+                <span>NHỰA PS<br />CHỐNG NƯỚC TỐI ĐA</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-sliders r-icon"></i>
+                <span>XOAY LẬT 180°<br />ĐIỀU TIẾT ÁNH SÁNG</span>
+              </div>
             </div>
-            <!-- <div
-              class="premium-img-detail"
-              style="background-image: url('img/man-go-2.jpg')"
-            ></div> -->
+          </div>
+
+          <div class="wood-gallery-container">
+            <div class="wood-gallery-grid wg-2-cols">
+              <div class="r-gallery-item">
+                <div class="w-img">
+                  <img src="img/mg_livingr.jpg" alt="Không gian cổ điển" />
+                </div>
+                <div class="r-tag">KHÔNG GIAN CỔ ĐIỂN</div>
+              </div>
+
+              <div class="r-gallery-item">
+                <div class="w-img">
+                  <img src="img/go_ps.jpg" alt="Nhựa PS chống nước" />
+                </div>
+                <div class="r-tag">NHỰA PS CHỐNG NƯỚC</div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- SẢN PHẨM 2: MÀN CẦU VỒNG (Bố cục Creative Collage) -->
-        <div class="pick-row pick-row-cau-vong creative-collage-rainbow">
-          <div class="pick-info">
-            <h3>Màn Cầu Vồng</h3>
-            <p>
-              Sự kết hợp hoàn hảo giữa thẩm mỹ và công năng. Dễ dàng điều tiết
-              ánh sáng linh hoạt nhờ thiết kế dệt đan xen độc đáo, phù hợp cho
-              mọi phong cách nội thất.
-            </p>
+        <div id="man-cau-vong" class="roller-poster-section">
+          <div
+            class="rainbow-hero"
+            style="background-image: url('img/cv\ diamond.jpg')"
+          ></div>
+
+          <div class="roller-middle">
+            <h3 class="roller-title">MÀN CẦU VỒNG</h3>
+
+            <div class="roller-features">
+              <div class="r-feature">
+                <i class="fa-solid fa-layer-group r-icon"></i>
+                <span>KẾT CẤU<br />2 LỚP VẢI</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-circle-half-stroke r-icon"></i>
+                <span>ĐIỀU TIẾT<br />ÁNH SÁNG</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-feather r-icon"></i>
+                <span>CHẤT VẢI<br />MỀM MẠI</span>
+              </div>
+            </div>
           </div>
-          <div class="pick-img-collage">
-            <div
-              class="collage-main-img"
-              style="
-                background-image: url('img/màn\ cầu\ vồng\ modern\ 04.jpg');
-              "
-            ></div>
-            <div
-              class="collage-sub-img"
-              style="background-image: url('img/cv\ diamond.jpg')"
-            ></div>
+
+          <div class="roller-gallery">
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mcv_livingr.jpg')"
+              ></div>
+              <div class="r-tag">PHÒNG KHÁCH</div>
+            </div>
+
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mcv_bedr.jpg')"
+              ></div>
+              <div class="r-tag">PHÒNG NGỦ</div>
+            </div>
+
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mcv_phonghoc.jpg')"
+              ></div>
+              <div class="r-tag">PHÒNG LÀM VIỆC</div>
+            </div>
+          </div>
+
+          <div class="mcv-detailed-features">
+            <div class="detailed-feature-row">
+              <h4 class="detail-subtitle">
+                01. CẢN NẮNG & ĐIỀU TIẾT ÁNH SÁNG TỐI ƯU
+              </h4>
+
+              <div class="wood-gallery-grid wg-2-cols detailed-grid">
+                <div class="r-gallery-item">
+                  <div class="w-img">
+                    <img src="img/mcv_uv.jpg" alt="Ngăn tia UV gây hại" />
+                  </div>
+                </div>
+
+                <div class="r-gallery-item">
+                  <div class="w-img">
+                    <img
+                      src="img/mcv_canSang.jpg"
+                      alt="Cản sáng hoàn hảo 100%"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detailed-feature-row">
+              <h4 class="detail-subtitle">02. BỘ SƯU TẬP MÀU SẮC ĐA DẠNG</h4>
+
+              <div class="detailed-wide-card">
+                <div class="w-img swatch-frame">
+                  <img
+                    src="img/mcv_color.jpg"
+                    alt="Swatch màu màn cầu vồng Lēoma"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
         <!-- SẢN PHẨM 3: MÀN NHÔM (Bố cục Chữ nhật Song song Tối giản) -->
-        <!-- SẢN PHẨM 3: MÀN NHÔM (Bố cục 3 cột vuông vức) -->
-        <div class="pick-row alu-grid-3">
-          <!-- Cột 1: Nội dung (Dùng lại class pick-info cho đồng bộ style trắng/hover vàng) -->
-          <div class="pick-info">
-            <h3>Màn Nhôm</h3>
-            <p>
-              Thiết kế thanh mảnh, tối giản nhưng siêu bền bỉ. Trượt xem chi
-              tiết cấu trúc cơ khí hoàn hảo giúp điều tiết ánh sáng tối ưu và
-              chống ẩm ướt tuyệt đối.
-            </p>
+        <div id="man-nhom" class="roller-poster-section">
+          <div
+            class="al-hero"
+            style="background-image: url('img/mn_hero.jpg')"
+          ></div>
+
+          <div class="roller-middle">
+            <h3 class="roller-title">MÀN SÁO NHÔM</h3>
+
+            <div class="roller-features">
+              <div class="r-feature">
+                <i class="fa-solid fa-shield-halved r-icon"></i>
+                <span>ĐỘ BỀN<br />VƯỢT TRỘI</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-palette r-icon"></i>
+                <span>BẢNG MÀU<br />PHONG PHÚ</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-arrows-rotate r-icon"></i>
+                <span>XOAY LẬT 180°<br />LINH HOẠT</span>
+              </div>
+            </div>
           </div>
 
-          <!-- Cột 2: Ảnh cận cảnh (Trải kín khung) -->
-          <div
-            class="alu-square-img"
-            style="
-              background-image: url('img/alu_leafs.jpg');
-              background-size: cover;
-            "
-          ></div>
+          <div class="mcv-detailed-features">
+            <div class="detailed-feature-row">
+              <h4 class="detail-subtitle">01. BỘ SƯU TẬP MÀN NHÔM</h4>
 
-          <!-- Cột 3: Ảnh thông số (Nằm gọn gàng trong khung vuông) -->
-          <div
-            class="alu-square-img"
-            style="
-              background-image: url('img/mannhom.jpg');
-              background-size: contain;
-              background-color: var(--white);
-            "
-          ></div>
+              <div class="wood-gallery-grid wg-3-cols">
+                <div class="r-gallery-item">
+                  <div class="w-img">
+                    <img
+                      src="img/mn_hinhin.jpg"
+                      alt="Màn nhôm in hình trẻ em 1"
+                    />
+                  </div>
+                  <div class="r-tag">HÌNH MÀN NHÔM</div>
+                </div>
+                <div class="r-gallery-item">
+                  <div class="w-img">
+                    <img
+                      src="img/mn_hinhin2.jpg"
+                      alt="Màn nhôm in hình trẻ em 2"
+                    />
+                  </div>
+                  <div class="r-tag">HÌNH MÀN NHÔM</div>
+                </div>
+                <div class="r-gallery-item">
+                  <div class="w-img">
+                    <img src="img/mn_1day.jpg" alt="Màn nhôm hệ 1 dây" />
+                  </div>
+                  <div class="r-tag">MÀN NHÔM MỘT DÂY</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="detailed-feature-row">
+              <h4 class="detail-subtitle">02. CẤU TẠO & CÔNG NGHỆ LÁ NHÔM</h4>
+              
+              <div class="detailed-wide-card" style="margin-bottom: 30px;">
+                <div class="w-img spec-frame">
+                  <img src="img/mannhom.jpg" alt="Kỹ thuật thông số màn nhôm">
+                </div>
+              </div>
+
+              <div class="wood-gallery-grid wg-2-cols" style="margin-bottom: 30px;">
+                <div class="r-gallery-item"><div class="w-img"><img src="img/mn_loaiLa.jpg" alt="Chi tiết các loại lá nhôm"></div></div>
+                <div class="r-gallery-item"><div class="w-img"><img src="img/mn_side.jpg" alt="Góc chiếu side của lá nhôm"></div></div>
+              </div>
+              
+              <div class="wood-gallery-grid wg-3-cols">
+                <div class="r-gallery-item"><div class="w-img"><img src="img/mn_tech1.jpg" alt="Công nghệ lá nhôm 1"></div></div>
+                <div class="r-gallery-item"><div class="w-img"><img src="img/mn_tech2.jpg" alt="Công nghệ lá nhôm 2"></div></div>
+                <div class="r-gallery-item"><div class="w-img"><img src="img/mn_tech3.jpg" alt="Công nghệ lá nhôm 3"></div></div>
+              </div>
+            </div>
+              
+            </div>
+
+            <div class="detailed-feature-row" style="margin-bottom: 20px">
+              <h4 class="detail-subtitle">03. BẢNG MÀU ĐA DẠNG</h4>
+
+              <div class="detailed-wide-card">
+                <div class="w-img swatch-frame">
+                  <img src="img/mn_color.jpg" alt="Bảng màu màn nhôm" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- SẢN PHẨM 4: MÀN CUỐN (Bố cục cơ bản cũ) -->
-        <div class="pick-row">
+        <!-- <div class="pick-row">
           <div class="pick-info">
             <h3>Màn Cuốn</h3>
             <p>
@@ -235,6 +488,57 @@
             class="pick-img"
             style="background-image: url('img/mannhom.jpg')"
           ></div>
+        </div> -->
+        <div id="man-cuon" class="roller-poster-section">
+          <div
+            class="roller-hero"
+            style="background-image: url('img/mc_main.jpg')"
+          ></div>
+
+          <div class="roller-middle">
+            <h3 class="roller-title">MÀN SÁO CUỐN</h3>
+
+            <div class="roller-features">
+              <div class="r-feature">
+                <i class="fa-solid fa-sun r-icon"></i>
+                <span>NGĂN TIA UV<br />HIỆU QUẢ</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-gear r-icon"></i>
+                <span>TỐI ƯU HÓA<br />TẢI TRỌNG</span>
+              </div>
+              <div class="r-feature">
+                <i class="fa-solid fa-droplet r-icon"></i>
+                <span>ĐA DẠNG MÀU<br />HIỆN ĐẠI</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="roller-gallery">
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mc_tron.jpg')"
+              ></div>
+              <div class="r-tag">VẢI TRƠN</div>
+            </div>
+
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mc_luoi.jpg')"
+              ></div>
+              <div class="r-tag">VẢI LƯỚI</div>
+            </div>
+
+            <div class="r-gallery-item">
+              <div
+                class="r-img"
+                style="background-image: url('img/mc_pattern.jpg')"
+              ></div>
+              <div class="r-tag">VẢI HỌA TIẾT</div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -303,27 +607,115 @@
       </div>
     </section>
 
+    <section id="contact" class="leoma-contact-banner" style="background-image: url('img/contact_bg.png');">
+      
+      <div class="banner-overlay"></div>
+
+      <div class="contact-banner-container">
+        
+        <div class="banner-text-col">
+          <h2 class="banner-title">Kiến tạo không gian<br>hoàn mỹ cùng Lēoma</h2>
+          <p class="banner-desc">
+            Để lại thông tin, chuyên gia của chúng tôi sẽ liên hệ tư vấn giải pháp che chắn tối ưu nhất cho khung cửa của bạn.
+          </p>
+        </div>
+
+        <div class="banner-form-col">
+          <div class="glass-form-frame">
+            <h3 class="form-title">Nhận tư vấn miễn phí</h3>
+            
+            <form action="#" method="POST">
+              
+              <div class="form-group">
+                <label for="fullname">Họ và tên <span class="req">*</span></label>
+                <input type="text" id="fullname" placeholder="Nguyễn Văn A" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email <span class="req">*</span></label>
+                <input type="email" id="email" placeholder="contact@aurijin.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Số điện thoại <span class="req">*</span></label>
+                <input type="tel" id="phone" placeholder="0912345678" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Nội dung <span class="req">*</span></label>
+                <div class="custom-select-wrapper">
+                  <select id="subject" required>
+                    <option value="" disabled selected hidden>Chọn chủ đề tư vấn</option>
+                    <option value="tu_van_sp">Tư vấn sản phẩm</option>
+                    <option value="bao_gia">Yêu cầu báo giá</option>
+                    <option value="hop_tac">Hợp tác kinh doanh</option>
+                    <option value="khac">Khác</option>
+                  </select>
+                  <i class="fa-solid fa-chevron-down select-arrow"></i>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-submit-contact">GỬI YÊU CẦU</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
     <!-- --- FOOTER --- -->
-    <footer id="footer">
-      <div>
-        <div class="footer-logo">LĒOMA</div>
-        <p style="margin-top: 20px; opacity: 0.6; font-weight: 300">
-          Định nghĩa lại phong cách che chắn cửa sổ. Tinh tế trong từng chi
-          tiết.
-        </p>
+    <footer id="footer" class="leoma-footer">
+      <div class="footer-container">
+        
+        <div class="footer-col brand-col">
+          
+          <div class="footer-logo-box">
+            <img src="img/logo_text.png" alt="Lēoma Logo" class="footer-logo-img">
+          </div>
+          
+          <p class="footer-desc">
+            Định nghĩa lại phong cách che chắn cửa sổ. Tinh tế trong từng chi tiết.
+          </p>
+          
+          <div class="social-links">
+            <a href="https://www.facebook.com/leomawindowblinds" target="_blank" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/leoma_window_blinds/" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@leomablinds" target="_blank" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">Khám phá</h4>
+          <ul>
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Về chúng tôi</a></li>
+            <li><a href="#products">Sản phẩm</a></li>
+            <li><a href="#projects">Dự án tiêu biểu</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Liên hệ</h4>
+          <ul class="contact-info-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i> 
+              <span>Quận 1, TP. Hồ Chí Minh</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i> 
+              <span>0909 123 456</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i> 
+              <span>hello@leoma.vn</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
-      <div>
-        <h4>Liên kết nhanh</h4>
-        <p>Trang chủ</p>
-        <p>Bộ sưu tập mới</p>
-        <p>Blog kiến trúc</p>
-        <p>Chính sách bảo hành</p>
-      </div>
-      <div>
-        <h4>Liên hệ</h4>
-        <p>hello@leoma.vn</p>
-        <p>0909 123 456</p>
-        <p>Quận 1, TP. Hồ Chí Minh</p>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lēoma Window Blinds. All rights reserved.</p>
       </div>
     </footer>
 
